@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>
+    <%= title %>
+  </title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body>
+  <style>
+
+    body{
+      /* background-color:rgb(56 47 65); */
+      background: linear-gradient(to left, #333, #d4cfcf 50%, #eee 75%, #c8b4b4 75%);
+    }
+    .id{
+      background-color: #aeaeae;
+      height: 436px;
+      width: 229px;
+      border: 3px solid #113345;
+      margin: auto;
+      border-radius: 20px;
+      box-shadow: -10px 11px 20px 1px #000000;
+    }
+
+    .img{
+      padding-top: 37px;
+      padding-left: 0px;
+      padding-right: 0px;
+      
+    }
+    h4{
+      padding-top: 10px;
+      text-align: center;
+    }
+
+    .img1{
+      height: 270px;
+      width: 226px;
+      border:2px solid silver;
+     
+    }
+
+    .name{
+      margin-top: -22px;
+      text-align: center;
+      height: 40px;
+      background-color: #5a5252;
+      color: #ccd6d6;
+
+    }
+
+    .empid{
+      text-align: center;
+      background-color: #244451;
+      margin-top: -13px;
+      color:#ccd6d6;
+    }
+
+    p{
+      padding-top: 5px;
+    }
+
+    span{
+
+      font-size: 28px;
+    font-family: serif;
+    color: #6d5645;
+    }
+  </style>
+
+
+ 
+
+
+
+ 
+  
+ <span>
+  PERSONAL  <br> DETAILS
+ </span>
+
+  <div class="container">
+    <div class="id">
+
+      <span></span>
+      
+      <div class="img"><img class="img1" src="../images/progileimg.png" alt=""></div>
+       
+      
+       <div class="name">
+        <h4><%= employeesArray.first_name%> <%= employeesArray.last_name%></h4>
+      </div>
+
+      <div class="empid">
+          <p>Employee ID: <%= employeesArray.emp_id%></p>
+          <p>Birthday: <%= employeesArray.birth_day%></p>
+
+      </div>
+
+    </div>
+
+  </div>

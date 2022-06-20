@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .container {
+            display: flex;
+            background-color: white;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 100%;
+        }
+
+
+
+        /* ---------- NAVBAR STYLING-----------*/
+
+        .nav {
+            width: 100%;
+            background-color: lightgray;
+            height: 40px;
+
+        }
+
+        ul {
+            list-style-type: none;
+
+        }
+
+        .nav li {
+            float: left;
+            margin-left: 104px;
+            padding: 10px 15px;
+
+
+        }
+
+        .nav li a {
+            text-decoration: none;
+            color: black;
+            font-size: 20px;
+            margin-right: 866px;
+            margin-left: 10px;
+            font-weight: bolder;
+
+        }
+
+        .link {
+            background-color: rgb(0, 145, 255);
+            width: 160px;
+            height: 35px;
+            padding: 10px 5px;
+            padding-bottom: 2px;
+            margin-right: 20px;
+
+
+        }
+
+
+
+
+
+        /* ---------- MAINSEC STYLING-----------*/
+
+        .container1 {
+            display: flex;
+            flex-direction: row;
+            width: 1160px;
+            margin: auto;
+            background-color: rgb(230, 238, 245);
+            height: 960px;
+        }
+
+
+        /* ---------- ROW STYLING-----------*/
+
+        .controw1 {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
+        }
+
+
+        /* ---------- MAIN SECTION STYLING-----------*/
+
+
+        .mainsec {
+            padding: 0px 20px;
+
+        }
+
+        /* ---------- SECTION STYLING-----------*/
+
+        .sec1 {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin-right: 30px;
+            background-color: rgb(219, 210, 210);
+            border: 1px solid yellow;
+            border-bottom: 1px solid yellow;
+            margin-bottom: 30px;
+
+        }
+
+        .sec1-img {
+            height: 160px;
+            width: 140px;
+            margin: auto;
+        }
+
+        .sec1-f {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin-bottom: 0px;
+            height: 40px;
+            background-color: rgb(134, 134, 134);
+            width: 256px;
+            font-size: 18px;
+
+        }
+
+        .sec1-div {
+            margin-right: 84px;
+            color: black;
+            padding-left: 20px;
+            padding-top: 10px;
+
+
+
+        }
+
+
+        .cloud {
+            height: 40px;
+            margin-right: 8px;
+        }
+
+        .delete {
+            height: 40px;
+            margin-left: 0px;
+            background-color: rgb(0, 145, 255);
+            width:32px;
+        }
+    </style>
+</head>
+
+<body>
+
+    
+    <div class="container">
+        <navbar class="nav item ">
+            <ul class="nav-ul">
+                <li><a href="#">Projects</a></li>
+                <li class="link"><a href="#" class="navlnk">NewProject+</a></li>
+            </ul>
+        </navbar>
+        <div class="mainsec item container1">
+            <div class="row1 controw1">
+                <% projectArray.forEach(function(eachproject){%>
+                <div class="sec1">
+                    <img src="./images/OIP.jfif" alt="house image" class="sec1-img >
+                    <footer class="sec1-f">
+                        <div class="sec1-div">
+                            <span class="textpad">Madisson</span>
+                        </div>
+                        <img src="./images/delete.png" alt="cloud image" class="cloud">
+                        <img src="./images/delete_p.png" alt="delete button" class="delete">
+                        <!-- <div class="sec1-cloud">
+                            <img src="cloud.jfif" alt="cloud image" class="cloud">
+                        </div>
+                        <div class="sec1-del" >
+                            <img src="delete.jfif" alt="delete button" class="delete">
+                        </div> -->
+                    </footer>
+                
+                </div>
+                <%})%>
+
+            </div>
+
+
+
+            <div class="row1 controw1">
+                <% projectArray.forEach(function(eachproject){%>
+                <div class="sec1">
+                    <img src="./images/OIP.jfif" alt="house image" class="sec1-img">
+                    <footer class="sec1-f">
+                        <div class="sec1-div">
+                            <span class="textpad">Madisson</span>
+                        </div>
+                        <img src="./images/delete.png" alt="cloud image" class="cloud">
+                        <img src="./images/delete_p.png" alt="delete button" class="delete">
+                        <!-- <div class="sec1-cloud">
+                            <img src="cloud.jfif" alt="cloud image" class="cloud">
+                        </div>
+                        <div class="sec1-del" >
+                            <img src="delete.jfif" alt="delete button" class="delete">
+                        </div> -->
+                    </footer>
+                
+                </div>
+                <%})%>
+
+            </div>
+
+
+
+            <div class="row1 controw1">
+                <% projectArray.forEach(function(eachproject){%>
+                <div class="sec1">
+                    <img src="./images/OIP.jfif" alt="house image" class="sec1-img">
+                    <footer class="sec1-f">
+                        <div class="sec1-div">
+                            <span class="textpad">Madisson</span>
+                        </div>
+                        <img src="./images/delete.png" alt="cloud image" class="cloud">
+                        <img src="./images/delete_p.png" alt="delete button" class="delete">
+                        <!-- <div class="sec1-cloud">
+                            <img src="cloud.jfif" alt="cloud image" class="cloud">
+                        </div>
+                        <div class="sec1-del" >
+                            <img src="delete.jfif" alt="delete button" class="delete">
+                        </div> -->
+                    </footer>
+                
+                </div>
+                <%})%>
+
+            </div>
+
+
+
+            <div class="row1 controw1">
+                <% projectArray.forEach(function(eachproject){%>
+                <div class="sec1">
+                    <img src="./images/OIP.jfif" alt="house image" class="sec1-img">
+                    <footer class="sec1-f">
+                        <div class="sec1-div">
+                            <span class="textpad">Madisson</span>
+                        </div>
+                        <img src="./images/delete.png" alt="cloud image" class="cloud">
+                        <img src="./images/delete_p.png" alt="delete button" class="delete" />
+                        <!-- <div class="sec1-cloud">
+                            <img src="cloud.jfif" alt="cloud image" class="cloud">
+                        </div>
+                        <div class="sec1-del" >
+                            <img src="delete.jfif" alt="delete button" class="delete">
+                        </div> -->
+                    </footer>
+                
+                </div>
+                <%})%>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
